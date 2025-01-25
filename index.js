@@ -18,6 +18,10 @@ client.on("messageCreate", async (message) => {
   console.log(message.content);
 });
 
+client.on('interactionCreate', (interaction) => {
+  console.log(interaction);
+  interaction.reply('Pong!');
+});
 
 require('dotenv').config();
 
